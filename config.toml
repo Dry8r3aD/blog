@@ -44,7 +44,7 @@ home = ["HTML", "RSS", "Algolia"]
   highlightjs = "docco"
 
   [params.social]
-  rss            = true
+  rss            = false
   email          = "me@dry8r3ad.com"
   facebook       = "https://www.facebook.com/Dry8r3aD"
   linkedin       = "https://www.linkedin.com/in/gunyoung-yoon-b099878a/"
