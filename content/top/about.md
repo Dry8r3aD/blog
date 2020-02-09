@@ -1,4 +1,4 @@
-![](/img/gyyoon_profile.jpg =250)
+![](/img/gyyoon_profile_220.jpg)
 Gunyoung Yoon (Dry8r3aD)
 
 
