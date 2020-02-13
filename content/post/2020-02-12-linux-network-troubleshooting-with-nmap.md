@@ -18,16 +18,20 @@ draft: true
 
 
 Troubleshooting a network is fun, challenging, and interesting, especially for sysadmins. Linux comes with various tools under its belt to help you along the way, including Nmap, ping, traceroute, netstat, ns lookup, and dig. For the purpose of this article, I will stick to Nmap and will explain the steps for how to troubleshoot a network.
+시스템이나 네트워크, 혹은 서버 관리자들에게 네트워크 트러블 슈팅은 재미있고, 도전적이고, 또 흥미로운 것일 것입니다. 리눅스 운영체제에는 기본적으로 Nmap, ping, traceroute, netstat, ns lookup, dig 등의 다양한 도구들이 시스템 관리자가 트러블슈팅을 할 때 사용 할 수 있게끔 탑재되어있습니다. 이 글에서는 Nmap 이라는 도구를 사용해서 네트워크의 문제를 진단하고 해결하는, 트러블슈팅 방법을 소개할 것입니다.
 
 Nmap is a useful tool for troubleshooting networks by detecting open ports, the OS version, routes between servers, and much more. Read the official documentation yourself to get a more in-depth look at this tool. Now, let’s dive into using some of the Nmap commands. First, check the version of Nmap (I’m using Red Hat Enterprise Linux 7.5), like this:
 
 
 If Nmap is not installed, type the following on an RHEL-based system:
+```
+sudo yum install -y nmap
+```
 
-$ sudo yum install -y nmap
 Now, run Nmap on our gateway IP:
-
-$ sudo nmap -sn <Your-IP>
+```
+sudo nmap -sn <Your-IP>
+```
 The results look like this:
 
 [ Related Story: How to validate your security measures ]
