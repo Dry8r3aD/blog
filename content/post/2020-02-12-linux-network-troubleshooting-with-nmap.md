@@ -21,6 +21,7 @@ Troubleshooting a network is fun, challenging, and interesting, especially for s
 시스템이나 네트워크, 혹은 서버 관리자들에게 네트워크 트러블 슈팅은 재미있고, 도전적이고, 또 흥미로운 것일 것입니다. 리눅스 운영체제에는 기본적으로 Nmap, ping, traceroute, netstat, ns lookup, dig 등의 다양한 도구들이 시스템 관리자가 트러블슈팅을 할 때 사용 할 수 있게끔 탑재되어있습니다. 이 글에서는 Nmap 이라는 도구를 사용해서 네트워크의 문제를 진단하고 해결하는, 트러블슈팅 방법을 소개할 것입니다.
 
 Nmap is a useful tool for troubleshooting networks by detecting open ports, the OS version, routes between servers, and much more. Read the official documentation yourself to get a more in-depth look at this tool. Now, let’s dive into using some of the Nmap commands. First, check the version of Nmap (I’m using Red Hat Enterprise Linux 7.5), like this:
+Nmap은 열린 포트나 운영체제 정보, 그리고 서버간의 라우팅 정보 등을 알아낼 수 있어,  네트워크 트러블슈팅을 할 때 유용한 도구입니다. 이 도구에 대해서 더 많은 정보를 얻기 위해서는 [공식 문서](https://official-doc-nmap)를 참고해주세요. 이제 Nmap을 사용하는 방법에 대해서 알아보겠습니다. 첫째로, Nmap의 버전정보를 확인해 주세요. (원글 작성자는 Red Had Enterprise, Linux 7.5 버전을 사용하였지만 저는 Ubuntu 18.04, Linux Kernel 4.5를 기준으로 작성하였습니다. 확인하는 명령어는 아래와 같습니다.
 
 
 If Nmap is not installed, type the following on an RHEL-based system:
