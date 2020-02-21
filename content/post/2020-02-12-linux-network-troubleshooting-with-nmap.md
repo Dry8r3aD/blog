@@ -22,19 +22,19 @@ Troubleshooting a network is fun, challenging, and interesting, especially for s
 
 Nmap is a useful tool for troubleshooting networks by detecting open ports, the OS version, routes between servers, and much more. Read the official documentation yourself to get a more in-depth look at this tool. Now, let’s dive into using some of the Nmap commands. First, check the version of Nmap (I’m using Red Hat Enterprise Linux 7.5), like this:
 Nmap은 열린 포트나 운영체제 정보, 그리고 서버간의 라우팅 정보 등을 알아낼 수 있어,  네트워크 트러블슈팅을 할 때 유용한 도구입니다. 이 도구에 대해서 더 많은 정보를 얻기 위해서는 [공식 문서](https://official-doc-nmap)를 참고해주세요. 이제 Nmap을 사용하는 방법에 대해서 알아보겠습니다. 첫째로, Nmap의 버전정보를 확인해 주세요. (원글 작성자는 Red Had Enterprise, Linux 7.5 버전을 사용하였지만 저는 Ubuntu 18.04.02 LTS, Linux Kernel 4.15를 기준으로 작성하였습니다. 확인하는 명령어는 아래와 같습니다.
-```Bash
+```
 $ nmap -vv
 Starting Nmap 7.60 ( https://nmap.org ) at 2020-02-16 19:58 KST
 ```
 
 아래와 같은(혹은 유사한) 결과가 나왔다면 Nmap이 설치되지 않은 것입니다.
-```Bash
+```
 $ nmap -vv
 zsh: command not found: nmap
 ```
 
 Nmap이 설치되지 않았다면 다음 명령어를 실행해서 설치 할 수 있습니다.
-```Bash
+```
 $ sudo apt install nmap
 ```
 
@@ -43,28 +43,38 @@ Nmap 설치가 되었다면 현재 속한 네트워크의 게이트웨이 IP를 
 $ sudo nmap -sn <Your-IP>
 ```
 
+결과: 
+```
+Host is up blah-blah
+```
+
+Nmap을 사용하여 특정 호스트의 OS를 식별 할 수도 있습니다. -O 옵션을 사용해주세요.
+```
+$ sudo nmap -sn <Your-IP>
+```
+
+
+
 ------------ 번역중 ---------------
-The results look like this:
 
-[ Related Story: How to validate your security measures ]
-
-Determine this host's OS with the -O switch:
-
-$ sudo nmap -O <Your-IP>
-The results look like this:
 
 [ You might also like: Six practical use cases for Nmap ]
 
 Then, run the following to check the common 2000 ports, which handle the common TCP and UDP services. Here, -Pn is used to skip the ping scan after assuming that the host is up:
 
+```
 $ sudo nmap -sS -sU -PN <Your-IP>
+```
+
 The results look like this:
 
 Note: The -Pn combo is also useful for checking if the host firewall is blocking ICMP requests or not.
 
 Also, as an extension to the above command, if you need to scan all ports instead of only the 2000 ports, you can use the following to scan ports from 1-66535:
 
+```
 $ sudo nmap -sS -sU -PN -p 1-65535 <Your-IP>
+```
 The results look like this:
 
 Image
@@ -72,13 +82,17 @@ Image
 
 You can also scan only for TCP ports (default 1000) by using the following:
 
+```
 $ sudo nmap -sT <Your-IP>
+```
 The results look like this:
 
 
 Now, after all of these checks, you can also perform the "all" aggressive scans with the -A option, which tells Nmap to perform OS and version checking using -T4 as a timing template that tells Nmap how fast to perform this scan (see the Nmap man page for more information on timing templates):
 
+```
 $ sudo nmap -A -T4 <Your-IP>
+```
 The results look like this, and are shown here in two parts:
 
 
