@@ -4,4 +4,4 @@
 	branch = master
 [submodule "themes/hugo-theme-cleanwhite"]
 	path = themes/hugo-theme-cleanwhite
-	url = github.com:Dry8r3aD/hugo-theme-cleanwhite.git
+	rl = github.com:Dry8r3aD/hugo-theme-cleanwhite.git
