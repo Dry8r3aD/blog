@@ -2,3 +2,6 @@
 	path = public
 	url = git@github.com:Dry8r3aD/dry8r3ad.github.com.git
 	branch = master
+[submodule "themes/hugo-theme-cleanwhite"]
+	path = themes/hugo-theme-cleanwhite
+	url = git@github.com:Dry8r3aD/hugo-theme-cleanwhite.git
