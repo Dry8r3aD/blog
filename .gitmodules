@@ -1,7 +1,7 @@
-[submodule "themes/hugo-theme-cleanwhite"]
-	path = themes/hugo-theme-cleanwhite
-	url = https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
 [submodule "public"]
 	path = public
 	url = git@github.com:Dry8r3aD/dry8r3ad.github.com.git
 	branch = master
+[submodule "themes/hugo-theme-cleanwhite"]
+	path = themes/hugo-theme-cleanwhite
+	url = https://github.com/zhaohuabing/hugo-theme-cleanwhite.git
