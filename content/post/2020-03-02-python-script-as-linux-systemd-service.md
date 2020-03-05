@@ -3,7 +3,7 @@ layout: post
 title: "Python Slack Bot(슬랙봇)을 리눅스 서버에서 돌리기"
 description: "파이썬으로 제작한 슬랙봇을 리눅스 서버의 systemd로 등록하는 방법"
 date: 2020-03-02T22:07:08+09:00
-image: "img/slack_logo.png"
+image: "img/2020-03-02-slack/slack_logo.png"
 author: Gunyoung Yoon
 categories: [ "Tech" ]
 tags: [ "Linux", "Slack", "Slack-Bot", "Python", "Systemd" ]
