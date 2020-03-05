@@ -14,7 +14,7 @@ hasCJKLanguage = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-#header_image = "img/home-bg-jeep.jpg"
+  header_image = "img/default_header.jpg"
   SEOTitle = "Dry8r3aD Blog"
   description = "Lorem Ipsium"
   keyword = "Lorem Ipsium"
