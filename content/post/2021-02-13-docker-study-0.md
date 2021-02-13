@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Hugo로 기술블로그 만들기"
+subtitle: "기술블로그를 Hugo로 만들어보자"
+description: "설명이 더 필요한가... 일단 탈-티스토리 각"
+date: 2020-02-09T22:47:36+09:00
+author: "Dry8r3aD"
+image: ""
+tags: ["tag1"]
+URL: "/2020/02/running-tech-blog-with-hugo/"
+categories: [ Tech ]
+draft: true
+---
+
+블-로그
+
+
+1. 설치하기 및 프로젝트 설정
+2. theme 고르기
+3. 커스터마이징
+3. 글 작성하기
